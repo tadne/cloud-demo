@@ -1,0 +1,18 @@
+server:
+  port: 10086
+spring:
+  application:
+    name:  eurekaserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka/
+    fetch-registry: false
+  instance:
+    leaseRenewalIntervalInSeconds: 30  # default is 30
+  server:
+    renewalPercentThreshold: 0.49
+
+
+  # default is 0.85 we can set the value to 0.49
+
